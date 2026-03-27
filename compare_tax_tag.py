@@ -49,6 +49,6 @@ def compare_balances(old_file, new_file, output_file):
 if __name__ == "__main__":
     old_file_path = "tax_tags_18.csv"   # Replace with your file path
     new_file_path = "tax_tags_19.csv"   # Replace with your file path
-    output_file_path = "balance_difference_numpy.csv"
+    output_file_path = "balance_difference.csv"
 
     compare_balances(old_file_path, new_file_path, output_file_path)
