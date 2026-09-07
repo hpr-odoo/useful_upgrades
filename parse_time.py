@@ -19,6 +19,12 @@ delta = dt.timedelta(minutes=1)
 fname = sys.argv[1]
 with open(fname, "rt") as f:
     for line in f:
+        # --------------------------------------------------------------
+        # If you want the files name instead of every line of execuation
+        # uncomment below line
+        # --------------------------------------------------------------
+        # if not any(word in line for word in ['pre-', 'post-', 'end-', 'init-', 'loading', 'Mocking menu']):
+        #     continue
         m = date_re.match(line)
         if not m:
             continue
